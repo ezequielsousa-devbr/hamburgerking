@@ -2,7 +2,7 @@
 
 .container-grid .container-main {
 	display: grid;
-	grid-template-rows: 175px 100vh 100vh auto;
+	grid-template-rows: [header] 175px [main] 100vh [about] 100vh [cardapios] auto [feedback] auto [form-container] auto;
 	row-gap: 2%;
 	box-sizing: border-box;
 }
@@ -90,12 +90,12 @@ main .main {
 	text-transform: capitalize;
 	color: black;
 	margin: 50px auto auto;
-	letter-spacing: -7px;
+	letter-spacing: 3px;
 }
 
 .title-main .title sub {
 	font-family: 'Questrial', sans-serif;
-	font-size: medium;
+	font-size: 28px;
 	font-weight: 400;
 	color: grey;
 }
@@ -155,7 +155,7 @@ main .main {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 55.7px;
 	font-weight: 500;
-	text-align: center;
+	text-align: left;
 	color: black;
 	margin: 20px auto;
 	padding: auto;
@@ -178,7 +178,7 @@ main .main {
 
 .container, h2 sub {
 	text-align: center;
-	margin: 10px auto;
+	margin: auto 0;
 }
 
 #feedback h2 {
@@ -191,6 +191,7 @@ main .main {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
+	gap: 10px;
 }
 
 .bg-color::after {
@@ -230,12 +231,14 @@ main .main {
 .card-body .cards-body-img {
 	background-image: url(https://i.postimg.cc/fZSr8hT1/burger-6507710-1920.jpg);
 	background-attachment: local;
-	background-size: contain;
+	background-size: cover;
 	background-position: center;
 	background-origin: border-box;
 	object-fit: cover;
 	background-repeat:  no-repeat;
 	content: ""; padding: 200px;
+	margin: 15px auto;
+	border-radius: 30px;
 }
 
 .card-body h4, .card-body h6 {
