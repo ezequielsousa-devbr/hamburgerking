@@ -1,0 +1,129 @@
+.container-grid .container-main {
+	display: grid;
+	grid-template-rows: auto;
+	row-gap: 75px;
+}
+
+.container-main {
+	display: block;
+}
+
+header .container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-shrink: initial;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .container {
+	margin: auto 20px;
+	padding: 2px auto;
+}
+
+header .logo h1 {
+	font-family: 'Rubik Beastly', cursive;
+	font-size: 2.4rem;
+	font-weight: normal;
+	text-align: center;
+	color: grey;
+	text-transform: capitalize;
+}
+
+.navbar-flex li {
+	display: inline-block;
+}
+
+.navbar-flex ul li a {
+	font-family: 'Questrial', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 5px;
+	margin: auto 10px;
+	color: grey;
+}
+
+.navbar-flex li:hover a {
+	border-bottom: 2px dotted #bc1823;
+}
+
+main .main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+main {
+	margin: 90px 0;
+}
+
+.main .title-main {
+	display: block;
+}
+
+.main::before {
+	position: absolute;
+	background-color: #bc1823;
+	width: 25%; height: 100%;
+	content: "";
+	padding: 10px;
+	left: auto; right: 0;
+	z-index: -999;
+}
+
+.title-main .circle::before {
+	background-image: url(https://i.postimg.cc/YChYddRB/windrose.png);
+	background-attachment: local;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	padding: 30px; content: "";
+	text-align: initial;
+	color: white;
+	margin: 10px auto;
+	z-index: 10;
+}
+
+.title-main .title h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 90.3px;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: black;
+	margin: 50px auto auto;
+	letter-spacing: -7px;
+}
+
+.title-main .title sub {
+	font-family: 'Questrial', sans-serif;
+	font-size: medium;
+	font-weight: 400;
+	color: grey;
+}
+
+.title-main button {
+	margin: 30px auto;
+	border: none;
+	background-color: #bc1823;
+	border-radius: 25px;
+	padding: 12px 40px;
+	font-weight: 500;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Questrial', sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+
+.main .figimg::after {
+	background-image: url(https://i.postimg.cc/z5BPMqL7/hamburger-3184108-1920.png);
+	background-attachment: local;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	content: "";
+	padding: 250px;
+}
