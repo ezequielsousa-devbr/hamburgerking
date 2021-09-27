@@ -4,6 +4,7 @@
 	display: grid;
 	grid-template-rows: auto;
 	row-gap: 3%;
+	box-sizing: border-box;
 }
 
 .container-main {
@@ -34,6 +35,10 @@ header .logo h1 {
 	text-transform: capitalize;
 }
 
+main {
+	margin: 28px 0;
+}
+
 .navbar-flex li {
 	display: inline-block;
 }
@@ -57,10 +62,6 @@ main .main {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
-}
-
-main {
-	margin: 50px 0;
 }
 
 .main .title-main {
@@ -297,8 +298,7 @@ main {
 	position: absolute;
 	background-color: #bc1823;
 	width: 25%; height: 100%;
-	content: "";
-	padding: 10px;
+	content: ""; padding: 10px;
 	left: 0; right: auto;
 	z-index: -999;
 }
@@ -309,6 +309,7 @@ main {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
+	align-content: center;
 }
 
 .form h2 {
@@ -341,10 +342,11 @@ main {
 /* RODAPÉ FOOTER */
 
 footer {
+	display: block;
 	background-color: black;
 }
 
-.copyright {
+footer .copyright {
 	font-family: 'Questrial', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
