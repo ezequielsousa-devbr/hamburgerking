@@ -26,9 +26,10 @@
 				<div class="logo"><h1>HamburguerKing</h1></div>
 				<nav class="navbar-flex">
 					<ul>
-						<li><a href="#comida" target="_self">Hamburger</a></li>
+						<li><a href="#home" target="_self">Hamburger</a></li>
 						<li><a href="#about" target="_self">Conheça a Hamburger</a></li>
 						<li><a href="#cardapios" target="_self">Cardapios</a></li>
+						<li><a href="#feedback" target="_self">Feedbacks</a></li>
 						<li><a href="#contato" target="_self">Fale Conosco</a></li>
 					</ul>
 				</nav>
@@ -48,22 +49,22 @@
 			</section>
 		</main>
 		<section id="about">
-			<div class="section">
+			<div class="about">
 				<figure class="figabout"></figure>
 				<div class="container-a">
-					<h2>Tudo sobre o <span>tsb</span></h2>
+					<h2>Conheça a Hamburger</h2>
 					<p>Servimos comida reconfortante irresistível desde 1999. Nossa missão é mantê-lo sorrindo a cada mordida. Aprecie uma refeição deliciosa!</p>
 					<button type="button" id="saibamais">Saiba mais</button>
 				</div>
 			</div>
 		</section>
-		<section id="cardapios">
-			<div class="container-b">
+		<section id="cardapios" class="bg-color">
+			<div class="container">
 				<h2>O que oferecemos</h2>
 				<sub>Curioso? Aqui estão os itens mais populares do nosso cardápio.</sub>
 				<div class="cards">
-					<div class="container-c">
-						<figure class="icon-card"></figure>
+					<div class="cards-container">
+						<figure class="icon-cards"></figure>
 						<div class="card-body">
 							<figure class="cards-body-img"></figure>
 							<h4>Burgers Gourmet</h4>
@@ -71,8 +72,8 @@
 					</div>
 				</div>
 				<div class="cards">
-					<div class="container-c">
-						<figure class="icon-card"></figure>
+					<div class="cards-container">
+						<figure class="icon-cards"></figure>
 						<div class="card-body">
 							<figure class="cards-body-img"></figure>
 							<h4>Asinhas de Frango</h4>
@@ -80,8 +81,8 @@
 					</div>
 				</div>
 				<div class="cards">
-					<div class="container-c">
-						<figure class="icon-card"></figure>
+					<div class="cards-container">
+						<figure class="icon-cards"></figure>
 						<div class="card-body">
 							<figure class="cards-body-img"></figure>
 							<h4>Bebidas deliciosas</h4>
@@ -90,67 +91,71 @@
 				</div>
 			</div>
 		</section>
+		<section id="feedback">
+			<div class="container">
+				<h2>O que o nossos clientes estão dizendo</h2>
+				<div class="feedback">
+					<div class="cards-container">
+						<figure class="cards-body-img-circle"></figure>
+						<div class="card-body">
+							<h6>Portal da comida online</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							<figure class="stars"></figure>
+						</div>
+					</div>
+				</div>
+				<div class="feedback">
+					<div class="cards-container">
+						<figure class="cards-body-img-circle"></figure>
+						<div class="card-body">
+							<h6>Pirâmide Alimentos Ltda.</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							<figure class="stars"></figure>
+						</div>
+					</div>
+				</div>
+				<div class="feedback">
+					<div class="cards-container">
+						<figure class="cards-body-img-circle"></figure>
+						<div class="card-body">
+							<h6>Júlio e Filhos Ltda.</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							<figure class="stars"></figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section id="contato">
-			<div class="container-b">
-				<h2>O que o nossos clientes dizem</h2>
-				<div class="cards">
-					<figure class="cards-body-img-circle"></figure>
-					<div class="body-container">
-						<h6>Portal da Comida Online</h6>
-						<div class="comments">
-							Depoimentos são frases curtas das pessoas que curtem sua marca. É uma ótima forma de convencer os clientes a experimentar seus serviços.
-						</div>
-						<figure class="icon-stars"></figure>
-					</div>
-				</div>
-				<div class="cards">
-					<figure class="cards-body-img-circle"></figure>
-					<div class="body-container">
-						<h6>Pirâmide Alimentos Ltda.</h6>
-						<div class="comments">
-							Depoimentos são frases curtas das pessoas que curtem sua marca. É uma ótima forma de convencer os clientes a experimentar seus serviços.
-						</div>
-						<figure class="icon-stars"></figure>
-					</div>
-				</div>
-				<div class="cards">
-					<figure class="cards-body-img-circle"></figure>
-					<div class="body-container">
-						<h6>Júlio e Filhos Ltda.</h6>
-						<div class="comments">
-							Depoimentos são frases curtas das pessoas que curtem sua marca. É uma ótima forma de convencer os clientes a experimentar seus serviços.
-						</div>
-						<figure class="icon-stars"></figure>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="main">
-			<div class="form-main">
+			<div class="form-container col-red">
 				<figure class="figimg"></figure>
-				<div class="address">
-					<h2>Fale conosco</h2>
-					<div class="container-a">
-						<table>
-							<tbody>
-								<tr>
-									<th>E-Mail</th>
-									<tr><td>alo@sitehamburgueria.com.br</td></tr>
-								</tr>
-								<tr>
-									<th>Loja Física</th>
-									<tr><td>Rua Qualquer, 123 - Cidade Qualquer, SP</td></tr>
-								</tr>
-								<tr>
-									<th>Ligar Agora</th>
-									<tr><td>(12) 3456-7890</td></tr>
-								</tr>
-							</tbody>
-						</table>
+				<div class="form">
+					<h2>Fale Conosco</h2>
+					<div class="address">
+						<div class="contain">
+							<h6>E-mail</h6>
+							<p><a href="mailto:alo@faleconosco.king.com.br" target="_self">alo@faleconosco.king.com.br</a></p>
+						</div>
+						<div class="contain">
+							<h6>Loja Física</h6>
+							<p><a href="#" target="_self">Rua Qualquer, 123 - Cidade Qualquer, SP</a></p>
+						</div>
+						<div class="contain">
+							<h6>Ligar Agora</h6>
+							<p><a href="tel:+551234567890" target="_self">(12) 3456-7890</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<footer>
+		<div class="copyright">
+			&copy; HamburgerKing todos os dias | Webdesign and Webdeveloper, Ezequiel Sousa.
+		</div>
+	</footer>
 	</div>
 </div>
 </body>
