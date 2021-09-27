@@ -2,13 +2,9 @@
 
 .container-grid .container-main {
 	display: grid;
-	grid-template-rows: auto;
-	row-gap: 3%;
+	grid-template-rows: 175px 100vh 100vh auto;
+	row-gap: 2%;
 	box-sizing: border-box;
-}
-
-.container-main {
-	display: block;
 }
 
 header .container {
@@ -33,10 +29,6 @@ header .logo h1 {
 	color: grey;
 	letter-spacing: 8px;
 	text-transform: capitalize;
-}
-
-main {
-	margin: 28px 0;
 }
 
 .navbar-flex li {
@@ -71,7 +63,7 @@ main .main {
 .main::before {
 	position: absolute;
 	background-color: #bc1823;
-	width: 25%; height: 100%;
+	width: 25%; height: 100vh;
 	content: "";
 	padding: 10px;
 	left: auto; right: 0;
@@ -140,7 +132,7 @@ main .main {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
-	margin: 12% 0;
+	height: 100vh;
 }
 
 .about .figabout {
@@ -206,15 +198,14 @@ main .main {
 	position: relative;
 	background-color: #cb1825;
 	content: ""; padding: 10px;
-	position: local;
-	top: -450px; bottom: 0;
+	top: -450px; bottom: 450px;
 	height: 100%; z-index: -100;
 }
 
 .cards, .feedback {
 	background-color: white;
 	max-width: 400px; height: auto;
-	margin: 10% 0; padding: 10px;
+	margin: 8% 0; padding: 10px;
 	border-radius: 10px;
 	filter: brightness(1.2) contrast(1.2);
 	border: 1px solid darkgrey;
@@ -346,9 +337,10 @@ main .main {
 footer {
 	display: block;
 	background-color: black;
+	margin: 0;
 }
 
-footer .copyright {
+.copyright {
 	font-family: 'Questrial', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
