@@ -1,39 +1,144 @@
-@media(max-width: 578px){
+@media(max-width: 578px) and (max-width: 1024px){
+
+	body {
+		overflow-x: hidden;
+	}
 
 	.container-grid .container-main {
 		display: grid;
-		grid-template-rows: [header] 175px [main] auto [about] auto [cardapios] auto [feedback] auto [form-container] auto;
+		grid-template-rows:
+			[header] auto [about] auto [cardapios] auto [feedback] auto [contato] auto;
 		row-gap: 2%;
 		box-sizing: border-box;
 	}
 
-	header .logo h1 {
-		font-size: 1.5rem;
+	header .container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		flex-shrink: initial;
+		justify-content: space-between;
+		align-items: center;
 	}
 
-	.main::before {
+	header .container {
+		margin: auto;
+		padding: 2px auto;
+	}
+
+	.navbar-flex li {
+		display: block;
+		margin: 12px auto;
+		text-align: left;
+	}
+
+	.navbar-flex ul li a {
+		font-size: 30px;
+	}
+
+	main .main {
+		padding: 0;
+	}
+
+	.main, .title-main, .circle::before {
+		background-attachment: local;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-origin: border-box;
+		padding: 30px; content: "";
+		background-position: center;
+		text-align: left; color: white;
+		margin: 10px auto; z-index: 10;
+	}
+
+	header .logo h1 {
 		display: none;
 	}
 
 	.title-main .title h2 {
-		font-size: 62.3px;
-		margin: 10px 0;
+		font-size: 3.9rem;
+		text-align: center;
 	}
 
-	.main .figimg {
-		margin: 230px 0;
+	.title-main, .title sub {
+		text-align: center;
+		font-size: 30px;
+		padding: 30px 10px;
 	}
 
-	.container, h2 sub {
-		margin: 250px auto;
+	.main::before, .col-red::before {
+		display: none;
+	}
+
+	.main .figimg::after, .form-container .figimg::before {
+		display: block;
+		padding: 200px;
+	}
+
+	.title-main button, .container-a button {
+		font-size: 28px;
+		text-align: center;
+		margin: 25px auto;
+	}
+
+	.about {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.about .figabout {
+		padding: 200px;
+	}
+
+	.about .container-a {
+		max-width: auto;
+	}
+
+	.about .container-a h2, .container h2, .form h2 {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	.about .container-a p, .container sub {
+		font-size: 1.8rem;
+		text-align: center;
+	}
+
+	.about .container-a, button {
+		text-align: center;
+	}
+
+	#feedback h2 {
+		color: black;
 	}
 
 	.container sub {
-		font-size: 20px;
+		font-size: 30px;
+		letter-spacing: normal;
+		line-height: normal;
+		padding: 10px;
+		color: black;
+	}
+
+	.bg-color::after {
+		display: none;
+	}
+
+	.form h2 {
+		text-align: center;
+	}
+
+	.address {
+		display: block;
+		margin: auto;
 		padding: 10px;
 	}
 
-	.col-red::before {
-		display: none;
+	.address .contain h6 {
+		font-size: 25px;
+	}
+
+	.contain p a {
+		font-size: 20px;
 	}
 }
