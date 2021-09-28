@@ -65,8 +65,7 @@ main .main {
 	position: absolute;
 	background-color: #bc1823;
 	width: 25%; height: 100vh;
-	content: "";
-	padding: 10px;
+	content: ""; padding: 10px;
 	left: auto; right: 0;
 	z-index: -999;
 }
@@ -130,7 +129,7 @@ main .main {
 .about {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-evenly;
 	align-items: center;
 	height: 100vh;
@@ -146,13 +145,18 @@ main .main {
 	content: ""; padding: 250px;
 	object-fit: cover;
 	border-radius: 10px;
+	margin: auto 10px;
 }
 
 .about .container-a {
 	max-width: 720px;
 }
 
-.about .container-a h2, .container h2, .form h2 {
+.about .container-a {
+	margin: auto 25px;
+}
+
+.about .container-a h2, .title h2, .form h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 55.7px;
 	font-weight: 500;
@@ -163,7 +167,7 @@ main .main {
 	text-transform: capitalize;
 }
 
-.about .container-a p, .container sub {
+.about .container-a p, .title sub {
 	font-family: 'Questrial', sans-serif;
 	font-size: 2.5rem;
 	text-align: left;
@@ -200,12 +204,17 @@ main .main {
 
 /* SEÇÃO CARDAPIOS E AVALIAÇÕES */
 
-.container, h2 sub {
+#cardapios .title h2, sub, #feedback .title h2 {
+	display: block;
 	text-align: center;
-	margin: auto 0;
 }
 
-#feedback h2 {
+#cardapios .title sub {
+	text-align: center;
+	line-height: normal;
+}
+
+#feedback .title h2 {
 	color: white;
 }
 
@@ -330,6 +339,7 @@ main .main {
 	justify-content: space-evenly;
 	align-items: center;
 	align-content: center;
+	height: 100vh;
 }
 
 .form h2 {
@@ -363,8 +373,8 @@ main .main {
 
 .footer {
 	display: block;
-	position: relative;
-	top: auto; bottom: -50%;
+	/*position: relative;
+	top: auto; bottom: -50%;*/
 	background-color: black;
 }
 

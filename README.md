@@ -4,6 +4,10 @@ Website para Hamburguerias Online. Está pagina tem a função de anunciar seu p
 **Webdeveloper and Webdesign**<br>
 *Ezequiel L. Sousa*<br>
 
+**Base de Screen Para Desenvolvimento do Projeto**<br>
+Resolução 1366 x 768<br>
+Resolução Máxima de Tela 1920 x 1080.<br>
+
 **HamburgerKing Home**
 ![HamburgerKing Home](./assets/arquivos/screenshot_hamburgerking.png)
 
