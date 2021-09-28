@@ -1,18 +1,14 @@
 @media(max-width: 578px) {
 
-	body {
-		overflow-x: hidden;
-	}
-
 	.container-grid .container-main {
 		display: grid;
 		grid-template-rows:
 			[header] auto [about] auto [cardapios] auto [feedback] auto [contato] auto;
-		row-gap: 2%;
+		grid-row-gap: 1%;
 		box-sizing: border-box;
 	}
 
-	header .container {
+	.container-header {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -21,8 +17,8 @@
 		align-items: center;
 	}
 
-	header .container {
-		margin: auto;
+	.container-header {
+		margin: auto 0;
 		padding: 2px auto;
 	}
 
@@ -33,11 +29,14 @@
 	}
 
 	.navbar-flex ul li a {
-		font-size: 30px;
+		font-size: 20px;
 	}
 
-	main .main {
-		padding: 0;
+	#main, .main {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		height: auto;
 	}
 
 	.main, .title-main, .circle::before {
@@ -45,51 +44,52 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-origin: border-box;
-		padding: 30px; content: "";
-		background-position: center;
+		padding: 10px; content: "";
+		background-position: start;
 		text-align: left; color: white;
 		margin: 10px auto; z-index: 10;
 	}
 
-	header .logo h1 {
+	#header .logo h1 {
 		display: none;
 	}
 
 	.title-main .title h2 {
-		font-size: 3.9rem;
-		text-align: center;
+		font-size: 1.3rem;
+		text-align: left;
 	}
 
-	.title-main, .title sub {
-		text-align: center;
-		font-size: 30px;
-		padding: 30px 10px;
+	.title-main .title sub {
+		text-align: left;
+		font-size: 18px;
+		padding: 10px 0;
 		line-height: normal;
 	}
 
+	/* Faixas vermelhas */
 	.main::before, .col-red::before {
-		display: none;
+		visibility: hidden;
 	}
 
 	.main .figimg::after, .form-container .figimg::before {
-		display: block;
-		padding: 200px;
+		padding: 90px;
 	}
 
 	.title-main button, .container-a button {
-		font-size: 26px;
+		font-size: 8px;
 		text-align: center;
-		margin: 25px auto;
+		margin: 20px auto;
 	}
 
 	.about {
 		display: flex;
-		flex-direction: row-reverse;
-		flex-wrap: wrap;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		height: auto;
 	}
 
 	.about .figabout {
-		padding: 200px;
+		padding: 90px;
 	}
 
 	.about .container-a {
@@ -97,37 +97,76 @@
 	}
 
 	.about .container-a h2, .title h2, .form h2 {
-		font-size: 2.5rem;
-		text-align: center;
+		font-size: 1.3rem;
+		text-align: left;
 	}
 
 	.about .container-a p, .container sub {
-		font-size: 1.8rem;
-		text-align: center;
+		font-size: 14px;
+		text-align: left;
 	}
 
 	.about .container-a, button {
 		text-align: center;
 	}
 
-	#cardapios .title h2, sub, #feedback .title h2 {
-	display: block;
-	text-align: center;
-	}
 
-	#cardapios .title sub {
+
+	#cardapios .title h2 sub, #feedback .title h2 {
+		font-size: 1.3rem;
 		text-align: center;
 	}
 
+	#cardapios .title sub {
+		font-size: 16px;
+		margin: 30px auto;
+	}
+
+	.container, .cards {
+		display: flex;
+		flex-direction: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
 	#feedback .title h2 {
-		color: white;
+		color: black;
+	}
+
+	.cards, .feedback {
+		padding: 0;
 	}
 
 	.bg-color::after {
 		display: none;
 	}
 
-	#contato {
+	.cards-container .icon-cards {
+		padding: 10px;
+	}
+
+	.card-body .cards-body-img {
+		padding: 25px;
+		border-radius: 5px;
+	}
+
+	.card-body h4, .card-body h6 {
+		font-size: 10px;
+	}
+
+	.card-body p {
+		font-size: 8px;
+	}
+
+	.cards-body-img-circle {
+		padding: 25px;
+	}
+
+	.stars {
+		padding: 30px;
+	}
+
+	.form-container {
 		height: auto;
 	}
 

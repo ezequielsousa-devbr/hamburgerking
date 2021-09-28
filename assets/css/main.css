@@ -3,26 +3,24 @@
 .container-grid .container-main {
 	display: grid;
 	grid-template-rows:
-		[header] 196px [home] 100vh [about] 100vh [cardapios] auto [feedback] auto [contato] auto;
-	row-gap: 2%;
+		[home] auto [about] auto [cardapios] auto [feedback] auto [contato] auto;
+	grid-row-gap: 3%;
 	box-sizing: border-box;
 }
 
-header .container {
+.container-header {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	flex-shrink: initial;
 	justify-content: space-between;
 	align-items: center;
 }
 
-header .container {
+.container-header {
 	margin: auto 20px;
-	padding: 2px auto;
 }
 
-header .logo h1 {
+#header .logo h1 {
 	font-family: 'Rubik Beastly', cursive;
 	font-size: 2.4rem;
 	font-weight: normal;
@@ -38,7 +36,7 @@ header .logo h1 {
 
 .navbar-flex ul li a {
 	font-family: 'Questrial', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	text-decoration: none;
 	padding: 5px;
 	margin: auto 10px;
@@ -49,12 +47,13 @@ header .logo h1 {
 	border-bottom: 2px dotted #bc1823;
 }
 
-main .main {
+#main, .main {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
+	height: 100vh;
 }
 
 .main .title-main {
@@ -95,9 +94,10 @@ main .main {
 
 .title-main .title sub {
 	font-family: 'Questrial', sans-serif;
-	font-size: 28px;
+	font-size: 30px;
 	font-weight: 400;
 	color: grey;
+	padding: 20px 10px;
 }
 
 .title-main button, .container-a button {
@@ -218,13 +218,15 @@ main .main {
 	color: white;
 }
 
-.container, .cards {
+.container,.cards {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-evenly;
 	align-items: center;
 	gap: 10px;
+	position: relative;
+	top: auto; bottom: 20px;
 }
 
 .bg-color::after {
@@ -269,7 +271,7 @@ main .main {
 	background-origin: border-box;
 	object-fit: cover;
 	background-repeat:  no-repeat;
-	content: ""; padding: 200px;
+	content: ""; padding: 190px;
 	margin: 15px auto;
 	border-radius: 30px;
 }
