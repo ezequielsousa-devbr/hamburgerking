@@ -1,0 +1,39 @@
+@media(max-width: 578px){
+
+	.container-grid .container-main {
+		display: grid;
+		grid-template-rows: [header] 175px [main] auto [about] auto [cardapios] auto [feedback] auto [form-container] auto;
+		row-gap: 2%;
+		box-sizing: border-box;
+	}
+
+	header .logo h1 {
+		font-size: 1.5rem;
+	}
+
+	.main::before {
+		display: none;
+	}
+
+	.title-main .title h2 {
+		font-size: 62.3px;
+		margin: 10px 0;
+	}
+
+	.main .figimg {
+		margin: 230px 0;
+	}
+
+	.container, h2 sub {
+		margin: 250px auto;
+	}
+
+	.container sub {
+		font-size: 20px;
+		padding: 10px;
+	}
+
+	.col-red::before {
+		display: none;
+	}
+}

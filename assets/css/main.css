@@ -2,7 +2,7 @@
 
 .container-grid .container-main {
 	display: grid;
-	grid-template-rows: [header] 175px [main] 100vh [about] 100vh [cardapios] auto [feedback] auto [form-container] auto;
+	grid-template-rows: [header] 196px [home] 100vh [about] 100vh [cardapios] auto [feedback] auto [contato] auto;
 	row-gap: 2%;
 	box-sizing: border-box;
 }
@@ -174,6 +174,29 @@ main .main {
 	text-align: left;
 }
 
+/* PAGINA PORTIFOLIO */
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-row-gap: 5px; grid-column-gap: 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". .";
+}
+
+.figure-img img {
+	background-position: center;
+	background-attachment: local;
+	background-size: cover;
+	background-repeat: no-repeat;
+	object-fit: cover;
+	max-width: 100%; height: 100%;
+	filter: contrast(1.2) brightness(1.1);
+}
+
 /* SEÇÃO CARDAPIOS E AVALIAÇÕES */
 
 .container, h2 sub {
@@ -337,13 +360,14 @@ main .main {
 
 /* RODAPÉ FOOTER */
 
-footer {
+.footer {
 	display: block;
+	position: relative;
+	top: auto; bottom: -100%;
 	background-color: black;
-	margin: 0;
 }
 
-.copyright {
+.footer p {
 	font-family: 'Questrial', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
