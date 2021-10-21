@@ -36,6 +36,7 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
+		justify-content: center;
 		height: auto;
 	}
 
@@ -44,10 +45,10 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-origin: border-box;
-		padding: 10px; content: "";
+		padding: auto; content: "";
 		background-position: start;
 		text-align: left; color: white;
-		margin: 10px auto; z-index: 10;
+		margin: 2px; z-index: 10;
 	}
 
 	#header .logo h1 {
@@ -55,41 +56,50 @@
 	}
 
 	.title-main .title h2 {
-		font-size: 1.3rem;
+		font-size: 1rem;
 		text-align: left;
 	}
 
 	.title-main .title sub {
 		text-align: left;
-		font-size: 18px;
-		padding: 10px 0;
+		font-size: 12px;
+		padding: 10px auto;
 		line-height: normal;
 	}
 
 	/* Faixas vermelhas */
 	.main::before, .col-red::before {
-		visibility: hidden;
+		display: none;
 	}
 
 	.main .figimg::after, .form-container .figimg::before {
-		padding: 90px;
+		padding: 75px;
 	}
 
 	.title-main button, .container-a button {
-		font-size: 8px;
+		margin: 10px auto;
+		border: none;
+		background-color: #bc1823;
+		border-radius: 25px;
+		padding: 12px 20px;
+		font-weight: 500;
+		color: white;
+		text-transform: uppercase;
+		font-family: 'Questrial', sans-serif;
+		font-size: 16px;
 		text-align: center;
-		margin: 20px auto;
 	}
 
 	.about {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
+		justify-content: center;
 		height: auto;
 	}
 
 	.about .figabout {
-		padding: 90px;
+		padding: 75px;
 	}
 
 	.about .container-a {
@@ -97,12 +107,12 @@
 	}
 
 	.about .container-a h2, .title h2, .form h2 {
-		font-size: 1.3rem;
+		font-size: 1rem;
 		text-align: left;
 	}
 
 	.about .container-a p, .container sub {
-		font-size: 14px;
+		font-size: 12px;
 		text-align: left;
 	}
 
@@ -113,7 +123,7 @@
 
 
 	#cardapios .title h2 sub, #feedback .title h2 {
-		font-size: 1.3rem;
+		font-size: 1rem;
 		text-align: center;
 	}
 
@@ -125,7 +135,7 @@
 	.container, .cards {
 		display: flex;
 		flex-direction: wrap;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-items: center;
 	}
 
@@ -159,7 +169,7 @@
 	}
 
 	.cards-body-img-circle {
-		padding: 25px;
+		padding: 10px;
 	}
 
 	.stars {
@@ -181,10 +191,10 @@
 	}
 
 	.address .contain h6 {
-		font-size: 25px;
+		font-size: 16px;
 	}
 
 	.contain p a {
-		font-size: 20px;
+		font-size: 10px;
 	}
 }
