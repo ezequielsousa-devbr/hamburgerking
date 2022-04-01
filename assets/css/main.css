@@ -22,7 +22,7 @@
 
 #header .logo h1 {
 	font-family: 'Rubik Beastly', cursive;
-	font-size: 2.4rem;
+	font-size: 2rem;
 	font-weight: normal;
 	text-align: center;
 	color: grey;
@@ -192,6 +192,18 @@
     ". .";
 }
 
+.header_portfolio {
+	background-color: black;
+}
+
+.header_portfolio .logo h1 {
+	color: #fff !important;
+}
+
+.header_portfolio .navbar-flex li a {
+	color: #fff;
+}
+
 .figure-img img {
 	background-position: center;
 	background-attachment: local;
@@ -212,6 +224,14 @@
 #cardapios .title sub {
 	text-align: center;
 	line-height: normal;
+}
+
+#feedback {
+	display: block;
+	position: relative;
+	top: -75px; bottom: auto;
+	left: auto; right: auto;
+	margin: auto;
 }
 
 #feedback .title h2 {
@@ -263,15 +283,14 @@
 	content: ""; padding: 20px;
 }
 
-.card-body .cards-body-img {
-	background-image: url(https://i.postimg.cc/fZSr8hT1/burger-6507710-1920.jpg);
+.card-body .cards-body-img img {
 	background-attachment: local;
 	background-size: cover;
 	background-position: center;
 	background-origin: border-box;
 	object-fit: cover;
 	background-repeat:  no-repeat;
-	content: ""; padding: 190px;
+	width: 100%; height: 100%;
 	margin: 15px auto;
 	border-radius: 30px;
 }

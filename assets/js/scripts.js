@@ -1,0 +1,2 @@
+// Alertar sobre compatibilidade de dispositivos móveis
+window.alert("Este site não é compatível com dispositivos móveis. Visualize-o em desktops e navegadores como google chrome, chromium, microsoft edge, firefox, brave browser, entre outros mais modernos...");
